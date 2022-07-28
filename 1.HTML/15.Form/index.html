@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name = "description" content = "Wellcome"/>
+        <title>Form Elements</title>
+        <style>h1{border:1px solid #000}</style>
+        <link rel = "stylesheet" href = "Style.css"/>
+        <link rel = "shortcut icon" href = "pi.png"/>
+        <script>
+            function click1(){
+                alert("click");
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align = "center">Form Elements</h1>
+        <!--
+            method has two values:
+            first value is -> post
+            second value is -> get
+        -->
+        <!--
+            we can write novalidate in form tag and it is opposite to required
+        -->
+        <!--
+            we can write target in form tag and it has two values(_self,_blank)
+        -->
+        <form name = "Form" action = "" method = "POST">
+            <label>label</label>
+            <hr/>
+            <label>text_input</label><br/>
+            <input type = "text" name = "text_input" value = "Text" placeholder = "Text" minlength = "10" maxlength = "15" required/>
+            <hr/>
+            <label>Password_input</label><br/>
+            <input type = "password" name = "password_input" value = "12345" placeholder = "Password" minlength = "10" maxlength = "15"/>
+            <hr/>
+            <label>Email_input</label><br/>
+            <input type = "email" name = "password_input" value = "Eslam@nn.com" placeholder = "email" minlength = "10" maxlength = "15" autofocus/>
+            <hr/>
+            <label>Search_input</label><br/>
+            <input type = "search" name = "search_input" value = "search"/>
+            <hr/>
+            <label>url_input</label><br/>
+            <input type = "url" name = "url_input"/>
+            <hr/>
+            <label>date_input</label><br/>
+            <input type = "date" name = "date_input"/>
+            <hr/>
+            <label>month_input</label><br/>
+            <input type = "month" name = "month_input"/>
+            <hr/>
+            <label>time_input</label><br/>
+            <input type = "time" name = "time_input"/>
+            <hr/>
+            <label>Color_input</label><br/>
+            <input type = "color" name = "color_input"/>
+            <hr/>
+            <label>Range_input</label><br/>
+            <input type = "range" name = "range_input"/>
+            <hr/>
+            <label>Range_input(min and max)</label><br/>
+            <input type = "range" name = "range_input2" min = "0" max = "100"/>
+            <hr/>
+            <label>Range_input(step)</label><br/>
+            <input type = "range" name = "range_input3" min = "0" max = "100" step = "20"/>
+            <hr/>
+            <label>Range_input(value)</label><br/>
+            <input type = "range" name = "range_input4" min = "0" max = "100" step = "20" value = "0"/>
+            <hr/>
+            <label>Number_input</label><br/>
+            <input type = "number" name = "number_input"/>
+            <hr/>
+            <label>Number_input(min and max)</label><br/>
+            <input type = "number" name = "number_input2" min = "0" max = "100"/>
+            <hr/>
+            <label>Number_input(step)</label><br/>
+            <input type = "number" name = "number_input3" min = "0" max = "100" step = "20"/>
+            <hr/>
+            <label>Number_input(value)</label><br/>
+            <input type = "number" name = "number_input4" min = "0" max = "100" step = "20" value = "50"/>
+            <hr/>
+            <label>submit_button</label><br/>
+            <input type = "submit" name = "submit_button" value = "Submit"/>
+            <hr/>
+            <label>checkbox</label><br/>
+            <input type = "checkbox" name = "Checkbox"/>
+            <hr/>
+            <label>button</label><br/>
+            <input type = "button" name = "button" value = "Button" onclick = "click1()"/>
+            <hr/>
+            <label>reset_button</label><br/>
+            <input type = "reset" name = "Reset" value = "reset"/>
+            <hr/>
+            <label>file_input</label><br/>
+            <input type = "file"/>
+            <hr/>
+            <label>hidden_input</label><br/>
+            <input type = "hidden" name = "hidden" value = "1234"/>
+            <hr/>
+            <label>image_input</label><br/>
+            <input type = "image" src = "http://www.placehold.it/150" alt = "Sorry" name = "Image"/>
+            <hr/>
+            <label>radio_input</label><br/>
+            <input type = "radio" name = "radio" value = "groub_1" checked/>groub_1(1)<br/>
+            <input type = "radio" name = "radio" value = "groub_1"/>groub_1(2)<br/>
+            <input type = "radio" name = "radio" value = "groub_1"/>groub_1(3)<br/><br/>
+            <input type = "radio" name = "radio2" value = "groub_2"/>groub_2(1)<br/>
+            <input type = "radio" name = "radio2" value = "groub_2"/>groub_2(2)<br/>
+            <input type = "radio" name = "radio2" value = "groub_2"/>groub_2(3)<br/>
+            <hr/>
+            <label>Radio_input(for)</label>
+            <input type = "radio" id = "radio" name = "radio3"  value = "radio_3"/>
+            <label for = "radio">Click_1</label>
+            <input type = "radio" id = "radio2" name = "radio3"  value = "radio_3"/>
+            <label for = "radio2">Click_2</label>
+            <hr/>
+            <label>Textarea</label><br/>
+            <textarea rows = "5" cols = "20">This is Textarea</textarea>
+            <hr/>
+            <label>Textarea_disabled</label><br/>
+            <textarea rows = "5" cols = "20" disabled>This is Textarea(disabled)</textarea>
+            <hr/>
+            <label>Textarea_readonly</label><br/>
+            <textarea rows = "5" cols = "20" readonly>This is Textarea(readonly)</textarea>
+            <hr/>
+            <label>fieldset</label>
+            <fieldset>
+                <legend>Legend</legend>
+                this is field set
+            </fieldset>
+            <hr/>
+            <h2>Form Example</h2>
+            <fieldset>
+                <legend>Form</legend>
+                <label>UserName</label>
+                <input type = "text" name = "User_name" placeholder = "Enter UserName" maxlength = "15"/><br/><br/>
+                <label>Password</label>
+                <input type = "password" name = "password" placeholder = "Enter password" maxlength = "15"/><br/><br/>
+                <input type = "submit" name = "Submit" value = "SignUp"/>
+            </fieldset>
+            <hr/>
+            <label>select_box</label>
+            <select name = "Select">
+                <option value = "1">Option 1</option>
+                <option value = "2">Option 2</option>
+                <option value = "3">Option 3</option>
+                <option value = "4">Option 4</option>
+                <option value = "5">Option 5</option>
+            </select>
+            <hr/>
+            <label>Select_box(disabled)</label>
+            <select name = "Select(disabled)" disabled>
+              <option value = "1">Option 1</option>
+              <option value = "2">Option 2</option>
+              <option value = "3">Option 3</option>
+              <option value = "4">Option 4</option>
+              <option value = "5">Option 5</option>
+            </select>
+            <hr/>
+            <label>Select_box(multiple)</label>
+            <select name = "Select_box(multiple)" multiple>
+                <option value = "1">Option 1</option>
+                <option value = "2">Option 2</option>
+                <option value = "3">Option 3</option>
+                <option value = "4">Option 4</option>
+                <option value = "5">Option 5</option> 
+            </select>
+            <hr/>
+            <label>Select_box(size)</label>
+            <select name = "Select_box(size)" size = "2">
+                <option value = "1">Option 1</option>
+                <option value = "2">Option 2</option>
+                <option value = "3">Option 3</option>
+                <option value = "4">Option 4</option>
+                <option value = "5">Option 5</option> 
+            </select>
+            <hr/>
+            
+            <label>Select_box(option selected)</label>
+            <select name = "Select_box(option selected)">
+                <option value = "1">Option 1</option>
+                <option value = "2">Option 2</option>
+                <option value = "3" selected>Option 3</option>
+                <option value = "4">Option 4</option>
+                <option value = "5">Option 5</option> 
+            </select>
+            <hr/>
+            <label>Select_box(option disabled)</label>
+            <select name = "Select_box(option disabled)">
+                <option value = "1">Option 1</option>
+                <option value = "2">Option 2</option>
+                <option value = "3" disabled>Option 3</option>
+                <option value = "4">Option 4</option>
+                <option value = "5">Option 5</option> 
+            </select>
+            <hr/>
+            <label>Select_box(optgroup)</label>
+            <select name = "Select_box()">
+                <optgroup label = "groube_1">
+                    <option value = "1">Option 1</option>
+                    <option value = "2">Option 2</option>
+                </optgroup>
+                <optgroup label = "groube_2">
+                    <option value = "3">Option 3</option>
+                    <option value = "4">Option 4</option>
+                    <option value = "5">Option 5</option>
+                </optgroup> 
+            </select>
+            <hr/>
+            <label>Select_box(optgroup_disabled)</label>
+            <select name = "Select_box(disabled)">
+                <optgroup label = "groube_1" disabled>
+                    <option value = "1">Option 1</option>
+                    <option value = "2">Option 2</option>
+                </optgroup>
+                <optgroup label = "groube_2">
+                    <option value = "3">Option 3</option>
+                    <option value = "4">Option 4</option>
+                    <option value = "5">Option 5</option>
+                </optgroup> 
+            </select>
+            <hr/>
+            <label>data list</label><br/>
+            <input list = "anything" name = "list_input"/>
+            <datalist id = "anything">
+                <option value = "option1"></option>
+                <option value = "option2"></option>
+                <option value = "option3"></option>
+                <option value = "option4"></option>
+                <option value = "option5"></option>
+            </datalist>
+            <hr/>
+            <label>button</label><br/>
+            <button onclick = "click1();">Click</button>
+        </form>
+    </body>
+</html>
